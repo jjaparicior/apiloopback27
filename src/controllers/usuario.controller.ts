@@ -63,7 +63,9 @@ export class UsuarioController {
     let contenido = `Hola, ${usuario.nombre} ${usuario.apellidos} su contraseña en el portal es: ${clave}`
     axios({
       method: 'post',
-      url: 'https://apinotificacionesg27e3misionti.herokuapp.com/send_email', //Si quiero enviar por mensaje cambiar a send_sms
+      //Si quiero enviar por mensaje cambiar a send_sms
+      url: 'https://apinotificacionesg27e3misionti.herokuapp.com/send_email',
+      // url: 'https://apinotificacionesg27e3misionti.herokuapp.com/send_sms',
 
       headers: {
         'Accept': 'application/json',
